@@ -182,9 +182,9 @@ static constexpr MetaData meta_data[] = {
 
   // e_Thermal_30s
   {
-    N_("Thermal climb, last 30 s"),
-    N_("TC 30s"),
-    N_("A 30 second rolling average climb rate based of the reported GPS altitude, or vario if available."),
+    N_("Thermal climb, last 18 s"),
+    N_("TC 18s"),
+    N_("An 18 second rolling average climb rate based of the reported GPS altitude, or vario if available."),
     UpdateInfoBoxThermal30s,
     e_TL_Avg, // TL Avg
     e_VerticalSpeed_Netto, // Netto

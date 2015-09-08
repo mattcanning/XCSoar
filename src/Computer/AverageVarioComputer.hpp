@@ -33,8 +33,8 @@ struct VarioInfo;
 class AverageVarioComputer {
   DeltaTime delta_time;
 
-  WindowFilter<30> vario_30s_filter;
-  WindowFilter<30> netto_30s_filter;
+  WindowFilter<18> vario_30s_filter;
+  WindowFilter<18> netto_30s_filter;
 
 public:
   void Reset();
