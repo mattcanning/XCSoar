@@ -378,6 +378,7 @@ void
 InfoBoxWindow::OnDestroy()
 {
   focus_timer.Cancel();
+  dialog_timer.Cancel();
   PaintWindow::OnDestroy();
 }
 
@@ -527,7 +528,7 @@ InfoBoxWindow::OnMouseMove(PixelScalar x, PixelScalar y, unsigned keys)
 }
 
 void
-InfoBoxWindow::OnPaint(Canvas &canvas)
+InfoBoxWindow::OnPaintBuffer(Canvas &canvas)
 {
   Paint(canvas);
 }

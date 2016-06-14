@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: xcsoar\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-08-18 07:31+0200\n"
-"PO-Revision-Date: 2015-08-25 14:03+0000\n"
+"PO-Revision-Date: 2016-06-01 14:22+0000\n"
 "Last-Translator: Dongwon Yoo <comicman.kr@gmail.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-08-26 20:01+0000\n"
-"X-Generator: Launchpad (build 17690)\n"
+"X-Launchpad-Export-Date: 2016-06-10 13:16+0000\n"
+"X-Generator: Launchpad (build 18097)\n"
 
 #. #-#-#-#-#  cpp.pot (PACKAGE VERSION)  #-#-#-#-#
 #. .. append " - Task #[n]" suffix to the task name
@@ -622,8 +622,7 @@ msgstr "써클링중이 아닙니다."
 #: src/Dialogs/dlgBrightness.cpp:143 src/Dialogs/ProfileListDialog.cpp:386
 #: src/Dialogs/Plane/PlaneListDialog.cpp:390 src/Dialogs/HelpDialog.cpp:50
 #: src/Dialogs/dlgInfoBoxAccess.cpp:112 src/Dialogs/ReplayDialog.cpp:154
-#: src/Dialogs/dlgStatus.cpp:62
-#: src/Dialogs/Waypoint/dlgWaypointDetails.cpp:458
+#: src/Dialogs/dlgStatus.cpp:62 src/Dialogs/Waypoint/dlgWaypointDetails.cpp:458
 #: src/Dialogs/Waypoint/Manager.cpp:317
 #: src/Dialogs/Task/Manager/TaskManagerDialog.cpp:150
 #: src/Dialogs/Task/Manager/TaskClosePanel.cpp:107
@@ -1392,8 +1391,7 @@ msgstr "속도(풍속)"
 msgid "Wind V"
 msgstr "풍속"
 
-#: src/InfoBoxes/Content/Factory.cpp:421
-#: src/InfoBoxes/Content/Factory.cpp:1168
+#: src/InfoBoxes/Content/Factory.cpp:421 src/InfoBoxes/Content/Factory.cpp:1168
 #, no-c-format
 msgid ""
 "Wind speed estimated by XCSoar. Manual adjustment is possible with the "
@@ -2348,8 +2346,8 @@ msgid ""
 "Pressure Altitude given as Flight Level. Only available if barometric "
 "altitude available and correct QNH set."
 msgstr ""
-"Flight Level 고도, feet로 표시되는 고도값이다. 고도기압고도계가 연결된 경우 "
-"QNH 보정이 가능하다."
+"Flight Level 고도, feet로 표시되는 고도값이다.  기압고도계가 연결된 경우 "
+"QNH(해면기압)보정이 가능하다."
 
 #: src/InfoBoxes/Content/Factory.cpp:972 src/InfoBoxes/Content/Factory.cpp:973
 #, no-c-format
@@ -2774,8 +2772,7 @@ msgstr ""
 msgid "Next radial"
 msgstr "다음 방사상 각도"
 
-#: src/InfoBoxes/Content/Factory.cpp:1204
-#: src/Dialogs/Task/TargetDialog.cpp:463
+#: src/InfoBoxes/Content/Factory.cpp:1204 src/Dialogs/Task/TargetDialog.cpp:463
 #, no-c-format
 msgid "Radial"
 msgstr "방사각도"
@@ -2953,8 +2950,7 @@ msgstr "시뮬레이터"
 msgid "Info"
 msgstr "정보"
 
-#: src/InfoBoxes/Content/Altitude.cpp:55
-#: src/InfoBoxes/Content/MacCready.cpp:53
+#: src/InfoBoxes/Content/Altitude.cpp:55 src/InfoBoxes/Content/MacCready.cpp:53
 #: src/Dialogs/Device/ManageFlarmDialog.cpp:82
 #: src/Dialogs/Device/LX/ManageV7Dialog.cpp:90
 #: src/Dialogs/Device/LX/ManageNanoDialog.cpp:84
@@ -2963,14 +2959,12 @@ msgstr "정보"
 msgid "Setup"
 msgstr "기타설정"
 
-#: src/InfoBoxes/Content/Altitude.cpp:73
-#: src/InfoBoxes/Content/Altitude.cpp:175
+#: src/InfoBoxes/Content/Altitude.cpp:73 src/InfoBoxes/Content/Altitude.cpp:175
 #: src/InfoBoxes/Content/Altitude.cpp:241
 msgid "no QNH"
-msgstr "QNH아님"
+msgstr "QNH필요"
 
-#: src/InfoBoxes/Content/MacCready.cpp:52
-#: src/InfoBoxes/Content/Weather.cpp:108
+#: src/InfoBoxes/Content/MacCready.cpp:52 src/InfoBoxes/Content/Weather.cpp:108
 #: src/Dialogs/Device/DeviceListDialog.cpp:276
 #: src/Dialogs/Plane/PlaneListDialog.cpp:159
 #: src/Dialogs/Waypoint/WaypointCommandsWidget.cpp:295
@@ -3084,7 +3078,7 @@ msgstr "지형/지역"
 #: src/InfoBoxes/Panel/AltitudeSetup.cpp:73
 #: src/Dialogs/Settings/dlgBasicSettings.cpp:304
 msgid "QNH"
-msgstr "QNH"
+msgstr "현재해면기압"
 
 #: src/InfoBoxes/Panel/AltitudeSetup.cpp:74
 #: src/Dialogs/Settings/dlgBasicSettings.cpp:305
@@ -3318,8 +3312,7 @@ msgstr "웨이포인트 표시"
 msgid "Topography/Terrain"
 msgstr "지형도/지역"
 
-#: src/PageSettings.cpp:44
-#: src/Dialogs/Settings/Panels/GaugesConfigPanel.cpp:84
+#: src/PageSettings.cpp:44 src/Dialogs/Settings/Panels/GaugesConfigPanel.cpp:84
 #: src/Dialogs/Settings/Panels/PagesConfigPanel.cpp:166
 #: src/Dialogs/Settings/Panels/PagesConfigPanel.cpp:338
 #, no-c-format
@@ -3644,8 +3637,7 @@ msgstr "내장GPS&센서"
 msgid "OK"
 msgstr "확인"
 
-#: src/Dialogs/Message.cpp:106
-#: src/Dialogs/StatusPanels/RulesStatusPanel.cpp:57
+#: src/Dialogs/Message.cpp:106 src/Dialogs/StatusPanels/RulesStatusPanel.cpp:57
 #: src/Dialogs/StatusPanels/RulesStatusPanel.cpp:60
 msgid "Yes"
 msgstr "예"
@@ -3730,8 +3722,7 @@ msgstr "다운로드중"
 #: src/Dialogs/Waypoint/Manager.cpp:250
 #: src/Dialogs/Task/Manager/TaskListPanel.cpp:273
 #: src/Dialogs/Weather/NOAAList.cpp:177 src/Dialogs/Weather/NOAAList.cpp:183
-#: src/Dialogs/Weather/NOAAList.cpp:290
-#: src/Dialogs/Weather/NOAADetails.cpp:168
+#: src/Dialogs/Weather/NOAAList.cpp:290 src/Dialogs/Weather/NOAADetails.cpp:168
 #: src/Dialogs/DownloadFilePicker.cpp:369
 msgid "Error"
 msgstr "오류"
@@ -3858,17 +3849,17 @@ msgstr "드라이버"
 #. for a passthrough device, offer additional driver
 #: src/Dialogs/Device/DeviceEditWidget.cpp:693
 msgid "Passthrough device"
-msgstr ""
+msgstr "장치 무시"
 
 #: src/Dialogs/Device/DeviceEditWidget.cpp:694
 msgid ""
 "This option lets you configure if this device has a passed  through device "
 "connected."
-msgstr ""
+msgstr "장치가 연결되었을때 기기에서 무시합니다."
 
 #: src/Dialogs/Device/DeviceEditWidget.cpp:705
 msgid "Second Driver"
-msgstr ""
+msgstr "두번째 드라이버"
 
 #: src/Dialogs/Device/DeviceEditWidget.cpp:707
 msgid "Sync. from device"
@@ -4067,7 +4058,7 @@ msgstr "기압"
 
 #: src/Dialogs/Device/CAI302/UnitsEditor.cpp:87
 msgid "Sink tone"
-msgstr "シンクトーン"
+msgstr "하강음"
 
 #: src/Dialogs/Device/CAI302/WaypointUploader.cpp:41
 #: src/Dialogs/ProfileListDialog.cpp:255 src/Dialogs/ProfileListDialog.cpp:280
@@ -4264,8 +4255,7 @@ msgstr "글라이더가 타스크 확인영역에 들어갔을때 음성안내, 
 
 #: src/Dialogs/Device/Vega/VoiceSettingsDialog.cpp:85
 #: src/Dialogs/Airspace/dlgAirspace.cpp:180
-#: src/Dialogs/Settings/dlgConfiguration.cpp:98
-#: src/Dialogs/dlgAnalysis.cpp:544
+#: src/Dialogs/Settings/dlgConfiguration.cpp:98 src/Dialogs/dlgAnalysis.cpp:544
 #: src/Dialogs/Settings/Panels/RouteConfigPanel.cpp:106
 #: Data/Input/default.xci:521
 #, no-c-format
@@ -4664,7 +4654,7 @@ msgstr "GPS 와 고기능 바리오(에어스피드 출력이 포함된)가 필�
 #: src/Dialogs/Settings/Panels/RouteConfigPanel.cpp:108
 #, no-c-format
 msgid "Both"
-msgstr "양쪽"
+msgstr "둘 다 사용"
 
 #: src/Dialogs/Settings/WindSettingsPanel.cpp:60
 #, no-c-format
@@ -5242,7 +5232,7 @@ msgstr "건조중량(열기구)"
 
 #: src/Dialogs/Plane/PlanePolarDialog.cpp:147
 msgid "Dry all-up flying mass of your plane"
-msgstr ""
+msgstr "기체의 건조중량"
 
 #. let the user select
 #: src/Dialogs/Plane/PlanePolarDialog.cpp:189
@@ -5851,7 +5841,7 @@ msgstr "웨이포인트 이름 표시"
 #: src/Dialogs/Settings/Panels/AirspaceConfigPanel.cpp:197
 #: src/Dialogs/Settings/Panels/WaypointDisplayConfigPanel.cpp:156
 msgid "Determines what labels are displayed."
-msgstr ""
+msgstr "라벨이 표시되는 것을 결정합니다."
 
 #: src/Dialogs/Settings/Panels/AirspaceConfigPanel.cpp:201
 msgid "Clip altitude"
@@ -5881,11 +5871,11 @@ msgstr "모든 공역 경보 켜기/끄기"
 
 #: src/Dialogs/Settings/Panels/AirspaceConfigPanel.cpp:212
 msgid "Warnings dialog"
-msgstr ""
+msgstr "경고다이얼로그"
 
 #: src/Dialogs/Settings/Panels/AirspaceConfigPanel.cpp:213
 msgid "Enable/disable displaying airspaces warnings dialog."
-msgstr ""
+msgstr "공역의 경고 다이얼로그를 설정/해제합니다."
 
 #: src/Dialogs/Settings/Panels/AirspaceConfigPanel.cpp:217
 msgid "Warning time"
@@ -6768,7 +6758,9 @@ msgstr "기체 위치 오프셋"
 msgid ""
 "Defines the location of the glider drawn on the screen in percent from the "
 "screen edge."
-msgstr "기체의 위치화면 표시오차를 설정합니다."
+msgstr ""
+"화면에서 기체의 표시 위치를 설정합니다. 10%는 아래쪽에, 50%는 화면의 가운데"
+"에 위치하게 설정합니다."
 
 #: src/Dialogs/Settings/Panels/MapDisplayConfigPanel.cpp:140
 msgid "Max. auto zoom distance"
@@ -7917,7 +7909,7 @@ msgstr "중량에 사용되는 단위입니다."
 
 #: src/Dialogs/Settings/Panels/UnitsConfigPanel.cpp:240
 msgid "Units used for wing loading."
-msgstr ""
+msgstr "익면하중의 단위입니다."
 
 #: src/Dialogs/Settings/Panels/UnitsConfigPanel.cpp:256
 msgid "Lat./Lon."
@@ -8642,7 +8634,7 @@ msgstr "잔여속도(V rem.)"
 
 #: src/Dialogs/Task/TargetDialog.cpp:481
 msgid "V ach"
-msgstr ""
+msgstr "표시속도(V ach)"
 
 #: src/Dialogs/Task/TargetDialog.cpp:483
 msgid ""
@@ -8690,8 +8682,7 @@ msgid ""
 "station."
 msgstr "공항 코드에 특수문자는 쓰이지 않습니다."
 
-#: src/Dialogs/Weather/NOAAList.cpp:216
-#: src/Dialogs/Weather/NOAADetails.cpp:114
+#: src/Dialogs/Weather/NOAAList.cpp:216 src/Dialogs/Weather/NOAADetails.cpp:114
 #, c-format
 msgid "Do you want to remove station %s?"
 msgstr "%s 를 삭제하시겠습니까?"
@@ -8701,8 +8692,7 @@ msgstr "%s 를 삭제하시겠습니까?"
 msgid "METAR and TAF"
 msgstr "METAR 와 TAF"
 
-#: src/Dialogs/Weather/NOAAList.cpp:289
-#: src/Dialogs/Weather/NOAADetails.cpp:167
+#: src/Dialogs/Weather/NOAAList.cpp:289 src/Dialogs/Weather/NOAADetails.cpp:167
 msgid "This function is not available on your platform yet."
 msgstr "이 기능은 당신의 시스템에서 사용할 수 없습니다."
 
@@ -9577,7 +9567,7 @@ msgid ""
 "Pan\n"
 "Off"
 msgstr ""
-"넓게보기\n"
+"주변탐색\n"
 "끄기"
 
 #: Data/Input/default.xci:710
@@ -9730,7 +9720,7 @@ msgid ""
 "Pan\n"
 "On"
 msgstr ""
-"넓게보기\n"
+"주변탐색\n"
 "켜기"
 
 #: Data/Input/default.xci:1103

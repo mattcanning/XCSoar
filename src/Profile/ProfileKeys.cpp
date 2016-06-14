@@ -57,6 +57,7 @@ const char TerrainContours[] = "TerrainContours";
 const char DrawTopography[] = "DrawTopology";
 const char FinalGlideTerrain[] = "FinalGlideTerrain";
 const char AutoWind[] = "AutoWind";
+const char ExternalWind[] = "ExternalWind";
 const char HomeWaypoint[] = "HomeWaypoint";
 const char HomeLocation[] = "HomeLocation";
 const char LiftUnitsValue[] = "LiftUnit";
@@ -128,6 +129,7 @@ const char AppDialogStyle[] = "AppDialogStyle";
 const char AppInfoBoxColors[] = "AppInfoBoxColors";
 const char TeamcodeRefWaypoint[] = "TeamcodeRefWaypoint";
 const char AppInfoBoxBorder[] = "AppInfoBoxBorder";
+const char ShowMenuButton[] = "ShowMenuButton";
 
 const char AppInfoBoxModel[] = "AppInfoBoxModel"; // VENTA-ADDON MODEL CONFIG
 

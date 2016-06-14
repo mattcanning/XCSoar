@@ -28,6 +28,7 @@
 #include "Look/AirspaceLook.hpp"
 #include "Airspace/AirspaceIntersectionVisitor.hpp"
 #include "Airspace/AbstractAirspace.hpp"
+#include "Airspace/AirspaceVisibility.hpp"
 #include "Renderer/AirspacePreviewRenderer.hpp"
 #include "Engine/Airspace/Airspaces.hpp"
 #include "Navigation/Aircraft.hpp"
@@ -147,6 +148,9 @@ AirspaceIntersectionVisitorSlice::Render(const AbstractAirspace &as) const
   if (intersections.empty())
     return;
 
+  if (!IsAirspaceTypeVisible(as, settings))
+    return;
+
   PixelRect rcd;
   // Calculate top and bottom coordinate
   rcd.top = chart.ScreenY(as.GetTopAltitude(state));
@@ -214,5 +218,5 @@ AirspaceXSRenderer::Draw(Canvas &canvas, const ChartRenderer &chart,
       canvas, chart, settings, look, start, state);
 
   // Call visitor with intersecting airspaces
-  database.VisitIntersecting(start, vec.EndPoint(start), ivisitor);
+  database.VisitIntersecting(start, vec.EndPoint(start), true, ivisitor);
 }

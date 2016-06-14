@@ -1,3 +1,67 @@
+Version 6.8.6 - not yet released
+
+Version 6.8.5 - 2016/06/12
+* calculations
+  - update circling percentage only when flying
+  - fix circling height gain calculation
+* user interface
+  - fix "kg/m^2" and "lb/ft^2" unit display
+  - fix inverse colors in horizon page
+  - reduce CPU load of some InfoBoxes (#3757)
+* calculations
+  - add option to disable external wind (#3693, #3773)
+* devices
+  - fix crash on malformed NMEA time stamp
+* Android
+  - improve Bluetooth LE compatibility (#3745)
+* Kobo
+  - reduce ghosting on old Kobo models; regression due to screen
+    flashing fix in 6.8.4 (#3756)
+
+Version 6.8.4 - 2016/05/18
+* airspace cross-section
+  - use airspace visibility configuration (#3751)
+* data files
+  - accept "Military Aerodrome Traffic Zone" (MATZ) airspaces in
+    OpenAir files (#3732)
+* devices
+  - CAI302: fix "airspace" marker in waypoint uploader (#3750)
+* calculations
+  - improve landing detection at high wind speeds (#3748)
+* logger
+  - fix crash in NMEA logger
+* user interface
+  - Australian units for weight are kg
+* Windows
+  - fix terrain loader (#3747)
+* Android
+  - fix crash bug in IOIO driver (#3744)
+  - fix crash bug on Android 1.6 (#3742)
+* Kobo
+  - eliminate screen flashing on Kobo Glo HD, Kobo Touch 2.0
+  - support battery status on Kobo Glo HD, Kobo Touch 2.0
+
+Version 6.8.3 - 2016/03/09
+* map
+  - fix distorted terrain when zoomed out
+  - fix missing airspaces in cross section (#3537)
+* calculations
+  - update SIS-AT to 2016 scoring rules
+  - fix landing time display (#3690)
+  - fix AAT range display
+* data files
+  - use correct "comment" field for OziExplorer files
+  - relax file format detection for OziExplorer files
+  - fix bogus arrival heights on watched waypoints when GPS unavailable
+  - fix crash in airspace parser
+  - fix crash in XML parser
+  - save user.cup after edit (#3701)
+* devices
+  - GTAltimeter: remove unmaintained driver (#3661)
+* Kobo
+  - support Kobo Glo HD, Kobo Touch 2.0
+* fix crash in SkyLines tracking
+
 Version 6.8.2 - 2015/09/19
 * Rubik R-26S polar
 * user interface

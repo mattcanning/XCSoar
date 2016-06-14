@@ -21,10 +21,30 @@ Copyright_License {
 }
 */
 
-#ifndef XCSOAR_DEVICE_DRIVER_GT_ALTIMETER_HPP
-#define XCSOAR_DEVICE_DRIVER_GT_ALTIMETER_HPP
+#ifndef XCSOAR_SCREEN_LAZY_PAINT_WINDOW_HXX
+#define XCSOAR_SCREEN_LAZY_PAINT_WINDOW_HXX
 
-extern const struct DeviceRegister gt_altimeter_driver;
+#ifdef USE_GDI
+
+#include "FakeBufferWindow.hpp"
+
+class LazyPaintWindow : public FakeBufferWindow {
+};
+
+#else
+
+#include "BufferWindow.hpp"
+
+/**
+ * A #PaintWindow implementation which avoids calling OnPaint() unless
+ * Invalidate() has been called explicitly.  It will try to avoid
+ * OnPaint() if the old screen contents are still available (which is
+ * only possible with GDI).  Implementations which require XCSoar to
+ * redraw the whole screen at a time (like OpenGL) need a buffer.
+ */
+class LazyPaintWindow : public BufferWindow {
+};
 
 #endif
 
+#endif

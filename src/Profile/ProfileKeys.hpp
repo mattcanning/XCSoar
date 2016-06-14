@@ -26,6 +26,7 @@ Copyright_License {
 
 namespace ProfileKeys {
 
+extern const char ShowMenuButton[];
 extern const char UIScale[];
 extern const char Password[];
 extern const char SpeedUnitsValue[];
@@ -75,6 +76,7 @@ extern const char SlopeShadingType[];
 extern const char TerrainContours[];
 extern const char FinalGlideTerrain[];
 extern const char AutoWind[];
+extern const char ExternalWind[];
 extern const char AirspaceWarning[];
 extern const char AirspaceWarningDialog[];
 extern const char AirspaceBlackOutline[];
